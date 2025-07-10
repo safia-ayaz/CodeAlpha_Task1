@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Image Gallery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>This is the beauty of Culture</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('place')">Famous Places</button>
+    <button onclick="filterImages('animals')">Foods</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <div class="gallery-item" data-category="nature"><img src="Assets/Blue-river.jpg" alt="Nature 1"></div>
+    <div class="gallery-item" data-category="place"><img src="Assets/taj-mahal.jpg" alt="Place 1"></div>
+    <div class="gallery-item" data-category="animals"><img src="Assets/dosa.jpg" alt="Food 1"></div>
+    <div class="gallery-item" data-category="nature"><img src="Assets/clouds.jpg" alt="Nature 2"></div>
+    <div class="gallery-item" data-category="place"><img src="Assets/bucket.jpg" alt="Place 2"></div>
+    <div class="gallery-item" data-category="animals"><img src="Assets/Cuisine.jpg" alt="Food 2"></div>
+    <div class="gallery-item" data-category="place"><img src="Assets/cover.jpg" alt="Place 3"></div>
+    <div class="gallery-item" data-category="nature"><img src="Assets/greenry.webp" alt="Nature 3"></div>
+    <div class="gallery-item" data-category="animals"><img src="Assets/masala-dosa.jpeg" alt="Food 3"></div>
+     
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+    <img id="lightbox-img" src="">
+    <span class="next" onclick="changeImage(1)">&#10095;</span>
+  </div>
+  <script src="script.js"></script>
+  </body>
+  </html>
+
+ 
